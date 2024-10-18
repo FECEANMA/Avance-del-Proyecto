@@ -1,5 +1,5 @@
 import React from 'react';  
-import Juego from './components/juego';  
+import Juego from './components/game';  
 
 const App: React.FC = () => (  
   <div>  
