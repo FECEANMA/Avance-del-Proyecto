@@ -40,6 +40,11 @@ const Juego: React.FC = () => {
     return null;  
   };  
 
+  const nuevoJuego = () => {
+    setTablero(Array(9).fill(null));
+    setTurno('X');
+  };
+
   const ganador = calcularGanador(tablero);  
   const estadoJuego = ganador ? `Ganador: ${ganador}` : `Turno de: ${turno}`;  
 
@@ -47,6 +52,7 @@ const Juego: React.FC = () => {
     <div>  
       <h2>{estadoJuego}</h2>  
       <Cuadrícula tablero={tablero} manejarClick={manejarClick} />  
+      <button onClick={nuevoJuego}>Nueva Partida</button>
     </div>  
   );  
 };  

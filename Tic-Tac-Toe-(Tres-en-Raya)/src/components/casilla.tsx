@@ -11,7 +11,7 @@ const Casilla: React.FC<CasillaProps> = ({ valor, manejarClick }) => {
       width: '100px',  
       height: '100px',  
       fontSize: '24px',  
-      backgroundColor: '#f0f0f0',  
+      backgroundColor: '#646cff',  
       cursor: 'pointer'  
     }} onClick={manejarClick}>  
       {valor}  
