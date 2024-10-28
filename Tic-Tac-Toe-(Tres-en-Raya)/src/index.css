@@ -2,30 +2,20 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url('https://play-lh.googleusercontent.com/nh0q_PR6kRvyptojlU-f173awzkhvukqGyrJVeVxYqBpLAsMBxKWqrcz_HiL4TJDtA=w526-h296-rw'); /* Cambia la ruta a tu imagen */
-  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-
+  background-image: url('https://play-lh.googleusercontent.com/nh0q_PR6kRvyptojlU-f173awzkhvukqGyrJVeVxYqBpLAsMBxKWqrcz_HiL4TJDtA=w526-h296-rw');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;                     
-  justify-content: center;           
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-a {
-  font-weight: 500;
-  color: #f1f1f1;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #dadada;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transición suave */
 }
 
 body {
@@ -33,11 +23,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 10px;
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 button {
@@ -49,11 +43,15 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s, transform 0.2s;
 }
+
 button:hover {
   border-color: #646cff;
+  background-color: #2a2a2a; /* Cambia el color de fondo al pasar el mouse */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -70,4 +68,31 @@ button:focus-visible {
   button {
     background-color: #fff9f9;
   }
+}
+
+a {
+  font-weight: 500;
+  color: #f1f1f1;
+  text-decoration: inherit;
+  animation: blink 1.5s infinite; /* Efecto de parpadeo */
+}
+
+a:hover {
+  color: #dadada;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
