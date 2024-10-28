@@ -40,13 +40,21 @@ const Game: React.FC = () => {
     return null;
   };
 
+  const isBoardFull = (board: Array<Player>): boolean => {
+    return board.every(cell => cell !== null);
+  };
+
   const newGame = () => {
     setBoard(Array(9).fill(null));
     setTurn('X');
   };
 
   const winner = calculateWinner(board);
-  const gameStatus = winner ? `Winner: ${winner}` : `Next turn: ${turn}`;
+  const gameStatus = winner 
+    ? `Winner: ${winner}` 
+    : isBoardFull(board) 
+      ? 'Draw!' 
+      : `Next turn: ${turn}`;
 
   return (
     <div>
