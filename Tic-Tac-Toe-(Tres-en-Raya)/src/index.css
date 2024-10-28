@@ -59,14 +59,14 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #ffffff;
-    background-color: #000000;
+      color: #ffffff;
+      background-color: #000000;
   }
   a:hover {
-    color: #747bff;
+      color: #747bff;
   }
   button {
-    background-color: #fff9f9;
+      background-color: #fff9f9;
   }
 }
 
@@ -83,10 +83,10 @@ a:hover {
 
 @keyframes blink {
   0%, 100% {
-    opacity: 1;
+      opacity: 1;
   }
   50% {
-    opacity: 0.5;
+      opacity: 0.5;
   }
 }
 
@@ -95,4 +95,21 @@ a:hover {
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.moving-image {
+  position: relative;
+  animation: move 5s linear infinite; /* Duración de 5 segundos, movimiento continuo */
+}
+
+@keyframes move {
+  0% {
+      left: -100px; /* Comienza fuera de la pantalla a la izquierda */
+  }
+  50% {
+      left: calc(100% + 100px); /* Se mueve completamente a la derecha */
+  }
+  100% {
+      left: -100px; /* Vuelve a la posición inicial */
+  }
 }
