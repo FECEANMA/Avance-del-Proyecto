@@ -58,10 +58,19 @@ const Game: React.FC = () => {
 
   return (
     <div>
-      <h2>{gameStatus}</h2>
+      <h2 style={{
+        fontFamily: 'Raya Display, cursive',
+        textShadow: '0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000',
+        textAlign: 'center'
+        }}>{gameStatus}</h2>
       <Grid board={board} handleClick={handleClick} />
-      <button onClick={newGame}>New Game</button>
-    </div>
+      <div style={{display: 'flex',
+        justifyContent: 'center',
+        marginTop: '20px',
+        fontFamily: 'Raya Display, cursive'}}>
+        <button onClick={newGame}>New Game</button>
+        </div>
+    </div>  
   );
 };
 
