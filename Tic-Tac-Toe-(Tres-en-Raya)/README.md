@@ -160,11 +160,37 @@
       ```
     - **Renderizar condicionalmente**: Mostrar X o O en las casillas según el turno del jugador.
       ```
-      
+      const handleClick = (index: number) => {
+      const newBoard = [...board];
+
+      if (newBoard[index] || calculateWinner(newBoard)) {
+      return; // Si la casilla ya tiene un valor o hay un ganador, no se hace nada
+      }
+
+      newBoard[index] = turn; // Se coloca la marca del jugador actual
+      setBoard(newBoard);
+      setTurn(turn === 'X' ? 'O' : 'X'); // Cambia el turno
+      };
       ```
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
       ```
-      
+      const Grid: React.FC<GridProps> = ({ board, handleClick }) => {
+      return (
+      <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 100px)',
+      gap: '5px',
+      backgroundColor: '#111', 
+      padding: '10px',
+      borderRadius: '10px',
+      boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)', 
+      }}>
+      {board.map((value, index) => (
+        <Box key={index} value={value} handleClick={() => handleClick(index)} />
+      ))}
+      </div>
+      );
+      };
       ```
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
       ```
