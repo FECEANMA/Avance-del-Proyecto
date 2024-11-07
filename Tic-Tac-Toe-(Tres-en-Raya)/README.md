@@ -220,7 +220,17 @@
       ```
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
       ```
-      
+      const handleClick = (index: number) => {
+      const newBoard = [...board];
+
+      if (newBoard[index] || calculateWinner(newBoard)) {
+      return;
+      }
+
+      newBoard[index] = turn;
+      setBoard(newBoard);
+      setTurn(turn === 'X' ? 'O' : 'X');
+      };
       ```
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
       ```
