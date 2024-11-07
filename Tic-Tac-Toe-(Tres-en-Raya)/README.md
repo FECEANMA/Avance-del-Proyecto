@@ -194,7 +194,9 @@
       ```
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
       ```
-      
+      {board.map((value, index) => (
+      <Box key={index} value={value} handleClick={() => handleClick(index)} />
+      ))}
       ```
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
       ```
