@@ -234,11 +234,57 @@
       ```
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
       ```
-      
+      const [board, setBoard] = useState<Array<Player>>(Array(9).fill(null));
+      //
+      const [turn, setTurn] = useState<Player>('X');
       ```
     - **Renderizado condicional (detectar ganador)**: Verificar si hay un ganador y mostrar un mensaje cuando el juego termine.
       ```
+      const calculateWinner = (board: Array<Player>): Player => {
+      const winningCombinations = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+      ];
+
+      for (let combination of winningCombinations) {
+      const [a, b, c] = combination;
+      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+      return board[a];
+      }
+      }
+      return null;
+      };
       
+      //
+      
+      const winner = calculateWinner(board);
+      const gameStatus = winner 
+      ? `Winner: ${winner}` 
+      : isBoardFull(board) 
+      ? 'Draw!' 
+      : `Next turn: ${turn}`;
+      
+      //
+      
+      return (
+      <div>
+      <h2 style={{
+      fontFamily: 'Raya Display, cursive',
+      textShadow: '0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000',
+      textAlign: 'center'
+       }}>{gameStatus}</h2>
+      <Grid board={board} handleClick={handleClick} />
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', fontFamily: 'Raya Display, cursive' }}>
+      <button onClick={newGame}>New Game</button>
+      </div>
+      </div>  
+      );
       ```
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
       ```
