@@ -288,7 +288,17 @@
       ```
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
       ```
-      
+      const handleClick = (index: number) => {
+      const newBoard = [...board];
+
+      if (newBoard[index] || calculateWinner(newBoard)) {
+      return;
+      }
+
+      newBoard[index] = turn; // **Actualiza el estado de la casilla**
+      (newBoard); // **Actualiza el estado del tablero**
+      setTurn(turn === 'X' ? 'O' : 'X'); // **Cambia el turno**
+      };
       ```
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
       ```
