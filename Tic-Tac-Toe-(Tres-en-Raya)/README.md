@@ -302,7 +302,26 @@
       ```
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
       ```
+      const [board, setBoard] = useState<Array<Player>>(Array(9).fill(null));
+      const [turn, setTurn] = useState<Player>('X');
       
+      //
+      
+      const handleClick = (index: number) => {
+      const newBoard = [...board];
+
+      if (newBoard[index] || calculateWinner(newBoard)) {
+        return;
+      }
+
+      newBoard[index] = turn;
+      setBoard(newBoard);
+      setTurn(turn === 'X' ? 'O' : 'X');
+      };
+      
+      //
+      
+      <Grid board={board} handleClick={handleClick} />
       ```
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
       ```
