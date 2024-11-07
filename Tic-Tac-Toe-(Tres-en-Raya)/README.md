@@ -200,7 +200,23 @@
       ```
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
       ```
-      
+      const Grid: React.FC<GridProps> = ({ board, handleClick }) => {
+      return (
+      <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 100px)',
+      gap: '5px',
+      backgroundColor: '#111', 
+      padding: '10px',
+      borderRadius: '10px',
+      boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)', 
+      }}>
+      {board.map((value, index) => (
+        <Box key={index} value={value} handleClick={() => handleClick(index)} />
+      ))}
+      </div>
+      );
+      };
       ```
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
       ```
