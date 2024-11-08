@@ -103,11 +103,12 @@
       export default Game;
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Incluye componentes para las casillas, la cuadrícula y la lógica del juego.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Crea componentes reutilizables para la cuadrícula y las casillas, permitiendo una estructura modular y fácil de mantener.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Utiliza React para gestionar el estado y la interfaz, lo que permite una actualización eficiente de la UI. La separación de 
+      componentes mejora la legibilidad y la organización del código.
 - **Habilidades**:
     - **Añadir marcado a JavaScript con JSX**: Usar JSX para estructurar la cuadrícula 3x3 y los elementos del juego.
       ```
