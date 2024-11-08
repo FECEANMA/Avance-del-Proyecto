@@ -453,11 +453,13 @@
       <Grid board={board} handleClick={handleClick} />
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Define el estado del tablero y el turno del jugador, y maneja los clics en las casillas para actualizar el juego.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con la habilidad de levantar el estado al compartir el estado del tablero y el turno entre componentes. Esto asegura que la 
+      cuadrícula y los controles del juego estén sincronizados
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque utiliza el hook useState de React, que permite gestionar el estado de manera eficiente y reactiva. Esto facilita la 
+      actualización del estado y la re-renderización de componentes cuando cambian los datos.
 - **Habilidades**:
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
       ```
