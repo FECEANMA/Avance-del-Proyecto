@@ -156,11 +156,17 @@
       }
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Utiliza JSX para renderizar un componente Box para cada elemento en el array board. Cada Box recibe una clave única (key) y un 
+      manejador de clics que llama a handleClick con el índice correspondiente. Esto permite que cada casilla del juego sea interactiva 
+      y se actualice correctamente al hacer clic.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Permite integrar lógica de JavaScript dentro del marcado, lo que es esencial para controlar el estado del juego. Al asignar un key 
+      a cada Box, React puede identificar y gestionar eficientemente cada componente, facilitando la verificación de las casillas 
+      seleccionadas y el seguimiento del estado del juego.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque combina la lógica de renderizado y la interacción del usuario en un solo lugar. Esto mejora la legibilidad y el 
+      mantenimiento del código, además de optimizar el rendimiento de React al permitir una actualización selectiva de componentes 
+      basados en cambios de estado.
 - **Habilidades**:
     - **Configurar componentes con props**: Pasar información sobre las casillas (X o O) y el estado del juego como props.
       ```
