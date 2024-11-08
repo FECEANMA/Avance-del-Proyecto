@@ -201,11 +201,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Este código define dos componentes en React: Box para mostrar el valor de una casilla (X, O o vacío) y Grid para gestionar el 
+      tablero.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple al utilizar props para pasar información entre componentes. Box recibe su valor y una función de clic, mientras que Grid 
+      maneja el estado del tablero.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque promueve la reutilización de componentes y la separación de responsabilidades. Cada componente es simple, claro y fácil de 
+      mantener, facilitando la gestión del estado del juego.
 - **Habilidades**:
     - **Renderizar condicionalmente**: Mostrar X o O en las casillas según el turno del jugador.
       ```
