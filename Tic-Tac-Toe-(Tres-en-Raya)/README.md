@@ -92,6 +92,7 @@
 
       export default Game;
       ```
+- **Habilidades**:
     - **Añadir marcado a JavaScript con JSX**: Usar JSX para estructurar la cuadrícula 3x3 y los elementos del juego.
       ```
       const Grid: React.FC<GridProps> = ({ board, handleClick }) => {
@@ -112,6 +113,7 @@
       );
       };
       ```
+- **Habilidades**:
     - **Añadir llaves con JSX**: Utilizar llaves para controlar las casillas seleccionadas y verificar si hay un ganador.
       ```
       {board.map((value, index) => (
@@ -159,6 +161,7 @@
       );
       };
       ```
+- **Habilidades**:
     - **Renderizar condicionalmente**: Mostrar X o O en las casillas según el turno del jugador.
       ```
       const handleClick = (index: number) => {
@@ -173,6 +176,7 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // Cambia el turno
       };
       ```
+- **Habilidades**:
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
       ```
       const Grid: React.FC<GridProps> = ({ board, handleClick }) => {
@@ -193,12 +197,14 @@
       );
       };
       ```
+- **Habilidades**:
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
       ```
       {board.map((value, index) => (
       <Box key={index} value={value} handleClick={() => handleClick(index)} />
       ))}
       ```
+- **Habilidades**:
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
       ```
       const Grid: React.FC<GridProps> = ({ board, handleClick }) => {
@@ -219,6 +225,7 @@
       );
       };
       ```
+- **Habilidades**:
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
       ```
       const handleClick = (index: number) => {
@@ -233,12 +240,14 @@
       setTurn(turn === 'X' ? 'O' : 'X');
       };
       ```
+- **Habilidades**:
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
       ```
       const [board, setBoard] = useState<Array<Player>>(Array(9).fill(null));
       //
       const [turn, setTurn] = useState<Player>('X');
       ```
+- **Habilidades**:
     - **Renderizado condicional (detectar ganador)**: Verificar si hay un ganador y mostrar un mensaje cuando el juego termine.
       ```
       const calculateWinner = (board: Array<Player>): Player => {
@@ -287,6 +296,7 @@
       </div>  
       );
       ```
+- **Habilidades**:
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
       ```
       const handleClick = (index: number) => {
@@ -301,6 +311,7 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // **Cambia el turno**
       };
       ```
+- **Habilidades**:
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
       ```
       const [board, setBoard] = useState<Array<Player>>(Array(9).fill(null));
@@ -324,6 +335,7 @@
       
       <Grid board={board} handleClick={handleClick} />
       ```
+- **Habilidades**:
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
       ```
       useEffect(() => {
