@@ -271,11 +271,14 @@
       ))}
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Repite sobre un array llamado board, creando un componente <Box> para cada elemento. Cada componente recibe un valor y una función 
+      handleClick que se ejecuta al hacer clic.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de mantener componentes puros al asegurarse de que <Box> no modifica el estado directamente. Solo recibe 
+      datos a través de props, evitando efectos secundarios.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+       Porque promueve la inmutabilidad y la reusabilidad. Los componentes puros son más fáciles de testear y entender, lo que mejora la 
+       mantenibilidad del código
 - **Habilidades**:
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
       ```
