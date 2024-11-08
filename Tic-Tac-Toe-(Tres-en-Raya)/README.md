@@ -278,11 +278,11 @@
       );
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
@@ -299,11 +299,11 @@
       setTurn(turn === 'X' ? 'O' : 'X');
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
@@ -312,11 +312,11 @@
       //
       const [turn, setTurn] = useState<Player>('X');
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Renderizado condicional (detectar ganador)**: Verificar si hay un ganador y mostrar un mensaje cuando el juego termine.
@@ -367,11 +367,11 @@
       </div>  
       );
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
@@ -388,11 +388,11 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // **Cambia el turno**
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
@@ -418,11 +418,11 @@
       
       <Grid board={board} handleClick={handleClick} />
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
@@ -435,9 +435,9 @@
       }
       }, [board]);
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
