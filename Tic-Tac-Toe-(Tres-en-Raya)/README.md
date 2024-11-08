@@ -225,11 +225,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Este fragmento de código maneja el clic en una casilla de un juego, actualizando el estado del tablero y alternando el turno entre 
+      los jugadores. Si la casilla ya está ocupada o hay un ganador, no se realiza ninguna acción.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de renderizar condicionalmente al mostrar 'X' o 'O' en las casillas según el turno del jugador. Esto se 
+      logra mediante la asignación de newBoard[index] = turn, que actualiza la casilla correspondiente.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque utiliza un enfoque claro y directo para manejar el estado del juego. La verificación de condiciones antes de actualizar el 
+      tablero asegura que no se realicen acciones inválidas
 - **Habilidades**:
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
       ```
