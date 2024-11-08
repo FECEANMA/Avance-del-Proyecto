@@ -24,14 +24,14 @@
       );
       };
       ```
-      -**¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       Define un componente de React llamado Box, que representa una celda en una cuadrícula. El componente 
       recibe dos propiedades: value, que determina el contenido de la celda, y handleClick, que se ejecuta al hacer clic en la celda.
-      -**¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       Cumple con el requisito de crear un componente de React al encapsular la lógica y el estilo de una celda en un solo lugar. Utiliza 
       propiedades para manejar la interacción y el estado visual, lo que es fundamental en el desarrollo de interfaces de usuario en 
       React.
-      -**¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       Porque utiliza las características de React, como componentes funcionales y propiedades, para crear una interfaz interactiva y 
       dinámica.
 - **Habilidades**:
