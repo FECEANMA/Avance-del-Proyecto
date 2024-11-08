@@ -340,11 +340,13 @@
       const [turn, setTurn] = useState<Player>('X');
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Inicializa el estado del juego, creando un tablero de 9 casillas y estableciendo el jugador actual como 'X'. Utiliza useState de 
+      React para gestionar estos estados.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con la habilidad de gestionar el estado al controlar qué casillas están ocupadas y quién es el jugador en turno.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque useState proporciona una forma sencilla y eficiente de manejar el estado en componentes funcionales de React, facilitando 
+      la actualización y renderización del tablero.
 - **Habilidades**:
     - **Renderizado condicional (detectar ganador)**: Verificar si hay un ganador y mostrar un mensaje cuando el juego termine.
       ```
