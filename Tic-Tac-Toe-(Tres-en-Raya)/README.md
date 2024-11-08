@@ -420,11 +420,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Maneja el clic en una casilla del tablero de un juego, actualizando el estado de la casilla seleccionada con el símbolo del 
+      jugador actual (X o O) y cambiando el turno al siguiente jugador.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con la habilidad de actualizar el estado al modificar el tablero de juego. Verifica si la casilla está ocupada o si hay un 
+      ganador antes de realizar la actualización, asegurando un flujo de juego correcto.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque utiliza un enfoque inmutable al crear una copia del tablero antes de modificarlo, lo que previene efectos secundarios y 
+      facilita la gestión del estado en aplicaciones React.
 - **Habilidades**:
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
       ```
