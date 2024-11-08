@@ -397,11 +397,13 @@
       );
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Determina el ganador de un juego, como el tres en raya. Calcula combinaciones ganadoras, verifica el estado del juego y muestra el 
+      resultado.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de renderizado condicional al verificar si hay un ganador o un empate. Muestra un mensaje correspondiente 
+      que indica el estado actual del juego.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Por que utiliza combinaciones predefinidas para verificar el ganador y maneja el estado del juego de manera clara y concisa.
 - **Habilidades**:
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
       ```
