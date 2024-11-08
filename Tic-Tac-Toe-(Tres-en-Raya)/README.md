@@ -301,11 +301,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Define un componente Grid en React que renderiza una cuadrícula de casillas. Utiliza CSS Grid para organizar visualmente los 
+      elementos en un diseño de tres columnas, donde cada casilla es un componente Box que responde a clics.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con la habilidad de entender la UI como árboles al organizar los componentes de forma jerárquica. Cada Box es un nodo hijo 
+      dentro de la cuadrícula, que actúa como el nodo padre.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque React permite la creación de componentes reutilizables y anidados, lo que mejora la legibilidad y la escalabilidad del 
+      código.
 - **Habilidades**:
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
       ```
