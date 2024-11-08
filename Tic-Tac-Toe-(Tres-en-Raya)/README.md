@@ -24,6 +24,7 @@
       );
       };
       ```
+      - **Habilidades**:
     - **Crear archivos con múltiples componentes**: Crear componentes para la cuadrícula, las casillas y los controles del juego.
       ```
       //Box
