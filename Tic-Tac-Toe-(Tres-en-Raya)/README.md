@@ -129,11 +129,11 @@
       );
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Añadir llaves con JSX**: Utilizar llaves para controlar las casillas seleccionadas y verificar si hay un ganador.
@@ -151,11 +151,11 @@
       }
       }
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Configurar componentes con props**: Pasar información sobre las casillas (X o O) y el estado del juego como props.
@@ -190,11 +190,11 @@
       );
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Renderizar condicionalmente**: Mostrar X o O en las casillas según el turno del jugador.
@@ -211,11 +211,11 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // Cambia el turno
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
@@ -238,11 +238,11 @@
       );
       };
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
@@ -251,11 +251,11 @@
       <Box key={index} value={value} handleClick={() => handleClick(index)} />
       ))}
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
