@@ -232,7 +232,7 @@
       logra mediante la asignación de newBoard[index] = turn, que actualiza la casilla correspondiente.
     - **¿Por qué es la mejor forma de implementarlo?**
       Porque utiliza un enfoque claro y directo para manejar el estado del juego. La verificación de condiciones antes de actualizar el 
-      tablero asegura que no se realicen acciones inválidas
+      tablero asegura que no se realicen acciones inválidas.
 - **Habilidades**:
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
       ```
@@ -255,11 +255,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Define un componente Grid en React que renderiza una cuadrícula de casillas. Utiliza la función map para iterar sobre el array 
+      board, creando un componente Box para cada elemento, lo que permite mostrar múltiples componentes de manera eficiente.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de renderizar múltiples componentes al utilizar el método map de JavaScript. Este método transforma cada 
+      elemento del array board en un componente Box, asegurando que todos los elementos se rendericen en la cuadrícula de forma dinámica 
+      y organizada.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque map es una técnica eficiente y declarativa para renderizar listas en React.
 - **Habilidades**:
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
       ```
