@@ -472,8 +472,11 @@
       }, [board]);
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Utiliza el hook useEffect para verificar si hay un ganador en el juego o si el tablero está lleno. Si se cumple alguna de estas 
+      condiciones, guarda el resultado en el historial de partidas.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de la habilidad al manejar efectos secundarios relacionados con el estado del juego. Al usar useEffect, se 
+      asegura que las acciones como reiniciar el juego o guardar el historial se realicen automáticamente cuando el tablero cambia.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque useEffect permite sincronizar el componente con el estado del juego de manera declarativa. Esto simplifica la lógica del 
+      componente y evita errores al manejar el ciclo de vida del juego.
