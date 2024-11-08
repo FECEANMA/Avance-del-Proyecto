@@ -325,5 +325,11 @@
       ```
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
       ```
-      
+      useEffect(() => {
+      const winner = calculateWinner(board);
+      if (winner || isBoardFull(board)) {
+      const result = winner ? `Winner: ${winner}` : 'Draw!';
+      setHistory(prevHistory => [...prevHistory, result]);
+      }
+      }, [board]);
       ```
