@@ -129,6 +129,7 @@
       }
       }
       ```
+- **Habilidades**:
     - **Configurar componentes con props**: Pasar información sobre las casillas (X o O) y el estado del juego como props.
       ```
       interface BoxProps {
