@@ -325,11 +325,13 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Maneja el evento de clic en un juego, permitiendo a los jugadores alternar turnos al hacer clic en las casillas. Si la casilla ya 
+      está ocupada o hay un ganador, no se realiza ninguna acción.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de controlar eventos del usuario al capturar los clics en las casillas del tablero. Esto permite alternar 
+      entre los turnos de los jugadores, asegurando que el juego avance correctamente.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque utiliza un enfoque declarativo y reactivo, permitiendo que el estado del juego se actualice automáticamente.
 - **Habilidades**:
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
       ```
