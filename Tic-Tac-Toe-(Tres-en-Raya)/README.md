@@ -102,11 +102,11 @@
 
       export default Game;
       ```
-      **¿Qué hace este fragmento de código?**
+    - **¿Qué hace este fragmento de código?**
       
-      **¿Cómo cumple con el requisito de la habilidad?**
+    - **¿Cómo cumple con el requisito de la habilidad?**
       
-      **¿Por qué es la mejor forma de implementarlo?**
+    - **¿Por qué es la mejor forma de implementarlo?**
       
 - **Habilidades**:
     - **Añadir marcado a JavaScript con JSX**: Usar JSX para estructurar la cuadrícula 3x3 y los elementos del juego.
