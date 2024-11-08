@@ -24,6 +24,12 @@
       );
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Crear archivos con múltiples componentes**: Crear componentes para la cuadrícula, las casillas y los controles del juego.
       ```
@@ -92,6 +98,12 @@
 
       export default Game;
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Añadir marcado a JavaScript con JSX**: Usar JSX para estructurar la cuadrícula 3x3 y los elementos del juego.
       ```
@@ -113,6 +125,12 @@
       );
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Añadir llaves con JSX**: Utilizar llaves para controlar las casillas seleccionadas y verificar si hay un ganador.
       ```
@@ -129,6 +147,12 @@
       }
       }
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Configurar componentes con props**: Pasar información sobre las casillas (X o O) y el estado del juego como props.
       ```
@@ -162,6 +186,12 @@
       );
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Renderizar condicionalmente**: Mostrar X o O en las casillas según el turno del jugador.
       ```
@@ -177,6 +207,12 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // Cambia el turno
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Renderizar múltiples componentes a la vez**: Renderizar todas las casillas de la cuadrícula utilizando `map`.
       ```
@@ -198,6 +234,12 @@
       );
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Mantener componentes puros**: Asegurar que las casillas no muten el estado directamente y solo reciban información a través de props.
       ```
@@ -205,6 +247,12 @@
       <Box key={index} value={value} handleClick={() => handleClick(index)} />
       ))}
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Entender la UI como árboles**: Organizar los componentes de forma jerárquica, donde las casillas son nodos hijos de la cuadrícula.
       ```
@@ -226,6 +274,12 @@
       );
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Controlar eventos del usuario**: Capturar los clics en las casillas para alternar entre los turnos de los jugadores.
       ```
@@ -241,6 +295,12 @@
       setTurn(turn === 'X' ? 'O' : 'X');
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Gestionar el estado**: Controlar el estado del juego, incluyendo qué casillas están ocupadas y qué jugador está en turno.
       ```
@@ -248,6 +308,12 @@
       //
       const [turn, setTurn] = useState<Player>('X');
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Renderizado condicional (detectar ganador)**: Verificar si hay un ganador y mostrar un mensaje cuando el juego termine.
       ```
@@ -297,6 +363,12 @@
       </div>  
       );
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Actualizar el estado**: Actualizar el estado de las casillas a medida que los jugadores colocan X o O.
       ```
@@ -312,6 +384,12 @@
       setTurn(turn === 'X' ? 'O' : 'X'); // **Cambia el turno**
       };
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Levantar el estado**: Compartir el estado entre los componentes para que la cuadrícula y los controles del juego estén sincronizados.
       ```
@@ -336,6 +414,12 @@
       
       <Grid board={board} handleClick={handleClick} />
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
 - **Habilidades**:
     - **Efectos opcionales**: Podrías usar `useEffect` para manejar acciones como reiniciar el juego automáticamente o guardar el historial de partidas.
       ```
@@ -347,3 +431,9 @@
       }
       }, [board]);
       ```
+      **¿Qué hace este fragmento de código?**
+      
+      **¿Cómo cumple con el requisito de la habilidad?**
+      
+      **¿Por qué es la mejor forma de implementarlo?**
+      
