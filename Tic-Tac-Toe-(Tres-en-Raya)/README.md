@@ -131,11 +131,14 @@
       };
       ```
     - **¿Qué hace este fragmento de código?**
-      
+      Define un componente de React llamado Grid, que renderiza una cuadrícula 3x3 utilizando JSX. Cada celda de la cuadrícula se 
+      representa mediante un componente Box, que se activa al hacer clic.
     - **¿Cómo cumple con el requisito de la habilidad?**
-      
+      Cumple con el requisito de usar JSX al estructurar visualmente la cuadrícula y los elementos del juego. JSX permite escribir un 
+      marcado similar a HTML dentro de JavaScript.
     - **¿Por qué es la mejor forma de implementarlo?**
-      
+      Porque JSX proporciona una sintaxis clara y declarativa, lo que mejora la legibilidad y el mantenimiento del código. Además, 
+      permite integrar la lógica de renderizado y la estructura visual en un solo lugar.
 - **Habilidades**:
     - **Añadir llaves con JSX**: Utilizar llaves para controlar las casillas seleccionadas y verificar si hay un ganador.
       ```
